@@ -1,48 +1,34 @@
 $(document).ready(function() {
 
-    var inventory = [];
-    var top = [];
-    var bottom = [];
+    var type ={
+        outerwear: [
 
-    // Upload
-    // var uploadInput=$("#upload-input");
-    // var uploadBtn=$("#upload-btn");
-    // uploadBtn.on("click",function(){
-    //     uploadInput.click();
+        ],
+        tops: [
+            "assets/icons/shortTs.png",
+             "assets/icons/longTs.png",
+              "assets/icons/baseballTs.png",
+               "assets/icons/pullOvers.png"
+            ],
+        bottoms: [
+            "assets/icons/shorts.png",
+             "assets/icons/pants.png",
+              "assets/icons/skirts.png"
+            ],
+    };
 
-    //     var image = $("#upload-input").val();
-    //     inventory.push(image);
-    //     console.log(image);
-    // })
-
-
-
-    $("#submit").on('click', function() {
-        event.preventDefault();
-
-        var itemName = $("#item-name").val();
-
-        if (document.getElementById("item-top").classList.contains("active") == true) {
-            inventory.push(itemName);
-            top.push(itemName);
-            $(".inventory-display").append("<p>" + itemName);
-        }
-        else if (document.getElementById("item-bottom").classList.contains("active") == true) {
-            inventory.push(itemName);
-            bottom.push(itemName);
-            $(".inventory-display").append("<p>" + itemName);
-        }
+    $("#generate-btn").on('click', function() {
+        generateType();
     })
+    function generateType() {
+        var randomTop = type.tops[Math.floor(Math.random() * type.tops.length)];
+        var randomBottom = type.bottoms[Math.floor(Math.random() * type.bottoms.length)];
 
-    $("#generate-inventory").on('click', function() {
-        var randomTop = top[Math.floor(Math.random() * top.length)];
-        var randomBottom = bottom[Math.floor(Math.random() * bottom.length)];
+        console.log(type.bottoms[1]);
 
-        $(".outfit-display").html("<p>" + randomTop + "<p>" + randomBottom);
-    })
-
-
-    
+        $(".top-display").html("<img src='" + randomTop + "'>");
+        $(".bottom-display").html("<img src='" + randomBottom + "'>");
+    }
 
 // END of jQuery
 })

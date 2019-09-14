@@ -20,3 +20,10 @@ h2 {
 p {
     color: #8f8f8f;
 }
+
+.top-display img {
+    width: 215px;
+}
+.bottom-display img {
+    width: 200px;
+}
