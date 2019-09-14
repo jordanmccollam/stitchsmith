@@ -1,0 +1,67 @@
+/* BLUE / myPrimary */
+.bg-myPrimary {
+    background: #76cad4;
+}
+.border-myPrimary {
+    border: 1px solid #76cad4;
+}
+.border-bottom-myPrimary {
+    border-bottom: 1px solid #76cad4;
+}
+.border-top-myPrimary {
+    border-top: 1px solid #76cad4;
+}
+.text-myPrimary {
+    color: #76cad4;
+}
+.btn-myPrimary:hover {
+    background: #76cad4;
+    color: white;
+}
+
+/* GREEN / mySecondary */
+.bg-mySecondary {
+    background: #57bb90;
+}
+.border-mySecondary {
+    border: 1px solid #57bb90;
+}
+.border-bottom-mySecondary {
+    border-bottom: 1px solid #57bb90;
+}
+.border-top-mySecondary {
+    border-top: 1px solid #57bb90;
+}
+.border-x-mySecondary:hover {
+    border-left: 2px solid #57bb90;
+    border-right: 2px solid #57bb90;
+}
+.text-mySecondary {
+    color: #57bb90;
+}
+.btn-mySecondary:hover {
+    background: #57bb90;
+    color: white;
+    border: 1px solid #57bb90;
+}
+
+/* custom */
+.bg-custom {
+    background: #e1dcd9;
+}
+.border-custom {
+    border: 1px solid #e1dcd9;
+}
+.border-bottom-custom {
+    border-bottom: 1px solid #e1dcd9;
+}
+.border-top-custom {
+    border-top: 1px solid #e1dcd9;
+}
+.text-custom {
+    color: #e1dcd9;
+}
+.btn-custom:hover {
+    background: #e1dcd9;
+    color: white;
+}
