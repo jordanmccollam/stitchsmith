@@ -36,7 +36,7 @@
                   <a class="nav-link" href="#">Link</a>
                 </li> -->
                 <div class="authentication ml-auto">
-                    <input type="file" hidden="hidden" id="upload-input">
+                    <!-- <input type="file" hidden="hidden" id="upload-input"> -->
                     <button id="upload-btn"class="btn border-myPrimary text-myPrimary btn-myPrimary mr-lg-1"><i class="fas fa-camera-retro"></i> Upload</button>
                     <a href="login.html"><button class="btn border-myPrimary text-myPrimary btn-myPrimary mr-lg-1"><i class="fas fa-user"></i> Login</button></a>
                     <a href="signup.html"><button class="btn border-myPrimary text-myPrimary btn-myPrimary"><i class="fas fa-user-plus"></i> Sign Up</button></a>
@@ -45,12 +45,64 @@
         </div>
     </nav>
 
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <form>
+            <div class="card">
+              <div class="card-header">
+                Featured
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="item-name">Name Your Item</label>
+                    <input type="text" class="form-control" id="item-name">
+                  </div>
+                  <div class="form-group">
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-secondary active" id="item-top">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Top
+                      </label>
+                      <label class="btn btn-secondary" id="item-bottom">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Bottom
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+              </form>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-6 text-center">
+            <div class="col-lg-8">
+                <h1 class="display-4">Your Outfit</h1>
+                <div class="outfit-display"></div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="row text-center mt-3">
+        <div class="col-lg-4 rounded">
+            <h1 class="display-4">Inventory</h1>
+            <div class="inventory-display"></div>
+            <button class="btn btn-primary" id="generate-inventory">Generate</button>
+        </div>
+      </div>
+  </div>
+
    
 
 <!-- Firebase -->
 <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
 <!--Bootstrap Scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
