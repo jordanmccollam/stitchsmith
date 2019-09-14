@@ -15,6 +15,49 @@ var firebaseConfig = {
 
 $(document).ready(function() {
 
+  // Sign Up
+    $("#signup-submit").on('click', function() {
+      event.preventDefault();
+      signup();
+    })
+
+    function signup() {
+      var name = $("#signup-name").val();
+      var email = $("#signup-email").val();
+      var password = $("#signup-password").val();
+
+      firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        window.alert("Error: " + errorMessage);
+        // ...
+      });
+    }
+
+
+    // Login
+    $("#login-submit").on('click', function() {
+      event.preventDefault();
+      login();
+    })
+
+    function login() {
+      var email = $("#login-email").val();
+      var password = $("#login-password").val();
+
+      firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        window.alert("Error: " + errorMessage);
+        // ...
+      });
+    }
+
+    // Logout 
+    
+    
     
 
     // END of jQuery
