@@ -15,6 +15,16 @@ var firebaseConfig = {
 
 $(document).ready(function() {
 
+  // firebase.auth().onAuthStateChanged(function(user) {
+  //   if (user) {
+  //     // User is signed in.
+  //     console.log(firebase.auth().user.name);
+
+  //   } else {
+  //     // No user is signed in.
+  //   }
+  // });
+
   // Sign Up
     $("#signup-submit").on('click', function() {
       event.preventDefault();
@@ -23,10 +33,16 @@ $(document).ready(function() {
 
     function signup() {
       var name = $("#signup-name").val();
+      var city = $("#signup-city").val();
       var email = $("#signup-email").val();
       var password = $("#signup-password").val();
 
-      firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+      firebase.auth().createUserWithEmailAndPassword(email, password, name, city).catch(function(error, user) {
+        // Add display name and city
+        user.updateProfile({
+          name: name,
+          city: city
+        })
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
