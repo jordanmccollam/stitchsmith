@@ -1,0 +1,22 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+h2 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.carousel img {
+    max-height: 363px;
+}
+
+p {
+    color: #8f8f8f;
+}
