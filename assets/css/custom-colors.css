@@ -23,6 +23,12 @@
 .bg-mySecondary {
     background: #57bb90;
 }
+.bg-mySecondary-hover {
+    background: #57bb90;
+}
+.bg-mySecondary-hover:hover {
+    background: #7abea1;
+}
 .border-mySecondary {
     border: 1px solid #57bb90;
 }

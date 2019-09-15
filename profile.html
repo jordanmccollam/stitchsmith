@@ -21,14 +21,14 @@
 <body>
 
     <!-- Nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light py-0 border-bottom-myPrimary">
+    <nav class="navbar navbar-dark bg-light py-0 border-bottom-myPrimary">
         <div class="container">
             <a class="navbar-brand bg-myPrimary border-x-mySecondary text-hover-mySecondary px-4 py-3" href="index.html"><strong>Clothing Generator</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span class=""><i class="fas fa-cog text-dark"></i></span>
             </button>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
               <!-- <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -40,6 +40,25 @@
                     <a href="login.html"><button class="btn border-myPrimary text-myPrimary btn-myPrimary mr-lg-1"><i class="fas fa-user"></i> Login</button></a>
                     <a href="signup.html"><button class="btn border-myPrimary text-myPrimary btn-myPrimary"><i class="fas fa-user-plus"></i> Sign Up</button></a>
                 </div> -->
+          
+              <!-- Toggle -->
+              <p class="border-top">Enable Weather Services</p>
+              <label class="switch normal" id="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+              <p class="border-top">Gender</p>
+              <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
+                  <label class="btn btn-secondary active" id="none">
+                    <input type="radio" name="options" autocomplete="off" checked> <i class="fas fa-user-slash fa-3x"></i>
+                  </label>
+                  <label class="btn btn-secondary px-3" id="male">
+                    <input type="radio" name="options" autocomplete="off"> <i class="fas fa-male fa-3x"></i>
+                  </label>
+                  <label class="btn btn-secondary" id="female">
+                    <input type="radio" name="options" autocomplete="off"> <i class="fas fa-female fa-3x"></i>
+                  </label>
+                </div>
             </div>
         </div>
     </nav>
@@ -66,7 +85,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
               <button type="submit" class="btn btn-primary" id="location-submit">Submit</button>
             </form>
             </div>
@@ -75,20 +94,11 @@
       </div>
 
     <div class="container mb-5">
-      <div class="row">
-        <div class="col-12 text-right mt-3">
-          <p>Enable Weather Services</p>
-          
-          <!-- Toggle -->
-          <label class="switch normal" id="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </div>
+      <div class="row mt-5">
         <div class="col-lg-12 text-center outfit-display">
             <h1 class="display-4">Your Outfit</h1>
-            <button class="btn btn-myPrimary border-myPrimary text-myPrimary" id="generate-btn">Generate</button>
-            <div class="border-top-myPrimary mt-3"></div>
+            <button class="btn bg-mySecondary-hover text-white" id="generate-btn">Generate</button>
+            <div class="border-top-mySecondary mt-3"></div>
             <div class="top-display mt-3"></div>
             <div class="bottom-display"></div>
         </div>
@@ -111,6 +121,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <!-- JS -->
+<!-- <script src="assets/javascript/bgChange.js"></script> -->
 <script src="assets/javascript/auth.js"></script>
 <script src="assets/javascript/logic.js"></script>
 </body>
