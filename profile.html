@@ -43,20 +43,28 @@
           
               <!-- Toggle -->
               <p class="border-top">Enable Weather Services</p>
-              <label class="switch normal" id="switch">
+              <!-- <label class="switch normal" id="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
-              </label>
+              </label> -->
+              <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
+                  <label class="btn btn-secondary active" id="weather-off">
+                    <input type="radio" name="options" autocomplete="off" checked> Off
+                  </label>
+                  <label class="btn btn-secondary px-3" id="weather-on">
+                    <input type="radio" name="options" autocomplete="off"> On
+                  </label>
+              </div>
               <p class="border-top">Gender</p>
               <div class="btn-group btn-group-toggle mb-3" data-toggle="buttons">
                   <label class="btn btn-secondary active" id="none">
-                    <input type="radio" name="options" autocomplete="off" checked> <i class="fas fa-user-slash fa-3x"></i>
+                    <input type="radio" name="options" autocomplete="off" checked> <i class="fas fa-user-slash fa-2x"></i>
                   </label>
                   <label class="btn btn-secondary px-3" id="male">
-                    <input type="radio" name="options" autocomplete="off"> <i class="fas fa-male fa-3x"></i>
+                    <input type="radio" name="options" autocomplete="off"> <i class="fas fa-male fa-2x"></i>
                   </label>
                   <label class="btn btn-secondary" id="female">
-                    <input type="radio" name="options" autocomplete="off"> <i class="fas fa-female fa-3x"></i>
+                    <input type="radio" name="options" autocomplete="off"> <i class="fas fa-female fa-2x"></i>
                   </label>
                 </div>
             </div>
@@ -76,13 +84,14 @@
             <div class="modal-body">
               <form>
                 <div class="form-group">
-                  <label for="city">City (Nashville)</label>
+                  <label for="city">City (Ex: "Nashville")</label>
                   <input type="text" class="form-control" id="city">
                 </div>
                 <div class="form-group">
-                  <label for="country">Country (USA)</label>
+                  <label for="country">Country (Ex: "USA")</label>
                   <input type="text" class="form-control" id="country">
                 </div>
+                <p class="text-danger" id="validation"></p>
             </div>
             <div class="modal-footer">
               <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
@@ -93,16 +102,29 @@
         </div>
       </div>
 
-    <div class="container mb-5">
-      <div class="row mt-5">
-        <div class="col-lg-12 text-center outfit-display">
+    <div class="container my-4 pb-5 pt-4 bg-light border-mySecondary rounded">
+      <div class="row">
+        <div class="col-lg-12 text-center">
             <h1 class="display-4">Your Outfit</h1>
-            <button class="btn bg-mySecondary-hover text-white" id="generate-btn">Generate</button>
+            <button class="btn bg-mySecondary-hover text-white btn-lg" id="generate-btn"><i class="fas fa-bolt"></i> Generate</button>
             <div class="border-top-mySecondary mt-3"></div>
-            <div class="top-display mt-3"></div>
-            <div class="bottom-display"></div>
         </div>
       </div>
+      <div class="row mt-3 color-display">
+        <div class="col-12">
+          <!-- <div class="color-display"></div> -->
+        </div>
+        <div class="col-6 text-right">
+          <div class="outerwear-display mt-3"></div>
+          <div class="shoes-display"></div>
+        </div>
+        <div class="col-6">
+          <div class="top-display mt-3"></div>
+          <div class="bottom-display ml-2"></div>
+        </div>
+      </div>
+
+    </div>
 
    
 
