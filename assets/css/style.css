@@ -19,6 +19,18 @@ h2 {
     max-height: 363px;
 }
 
+.carousel-item {
+    padding: 7% 15%;
+}
+
+#footer {
+    padding: 7% 15%;
+    text-align: center;
+}
+.social-icon {
+    margin: 20px 10px;
+}
+
 p {
     color: #8f8f8f;
 }
