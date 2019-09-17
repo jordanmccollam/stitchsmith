@@ -1,7 +1,5 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    /* background: url(../images/retro.png); */
-    /* background-size: cover; */
     height: 100%;
     width: 100%;
     min-height: 700px
@@ -21,16 +19,13 @@ h2 {
     height: 363px; 
 }
 
-.carousel-item {
-    padding: 7% 15%;
+#testimonials .carousel-item {
+    padding: 0% 15%;
 }
 
 #footer {
-    padding: 7% 15%;
+    padding: 4% 15%;
     text-align: center;
-}
-.social-icon {
-    margin: 20px 10px;
 }
 
 p {
@@ -66,5 +61,19 @@ p {
     }
     .shoes-display img {
         width: 135px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .carousel img {
+        height: 250px; 
     }
 }
