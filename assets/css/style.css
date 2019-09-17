@@ -1,8 +1,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-size: cover;
+    /* background: url(../images/retro.png); */
+    /* background-size: cover; */
     height: 100%;
     width: 100%;
+    min-height: 700px
 }
 
 h1 {
@@ -16,7 +18,7 @@ h2 {
 }
 
 .carousel img {
-    max-height: 363px;
+    height: 363px; 
 }
 
 .carousel-item {
@@ -37,7 +39,32 @@ p {
 
 .top-display img {
     width: 215px;
+    max-height: 215px;
+}
+.outerwear-display img {
+    width: 215px;
+    max-height: 215px;
 }
 .bottom-display img {
     width: 200px;
+    max-height: 215px;
+}
+.shoes-display img {
+    width: 200px;
+    max-height: 215px;
+}
+
+@media only screen and (max-width: 700px) {
+    .top-display img {
+        width: 150px;
+    }
+    .outerwear-display img {
+        width: 150px;
+    }
+    .bottom-display img {
+        width: 135px;
+    }
+    .shoes-display img {
+        width: 135px;
+    }
 }
