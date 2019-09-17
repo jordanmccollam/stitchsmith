@@ -155,7 +155,7 @@ $(document).ready(function() {
 
     // Weather
     function weather(city, country) {
-        var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "," + country + "&units=imperial&APPID=718adad55220d55bd05121a7873d51c6";
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "," + country + "&units=imperial&APPID=718adad55220d55bd05121a7873d51c6";
 
         $.ajax({
             url: queryURL,
@@ -326,7 +326,7 @@ $(document).ready(function() {
     generateColors();
     function generateColors() {
         var color = Math.floor(Math.random() * 100000);
-        var url = "http://www.thecolorapi.com/scheme?hex=" + color;
+        var url = "https://www.thecolorapi.com/scheme?hex=" + color;
 
         $.ajax ({
             url: url,
