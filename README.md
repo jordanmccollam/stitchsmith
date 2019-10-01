@@ -13,3 +13,7 @@ Lastly, the cherry on top, with each clothing template generated, you'll get an 
 * Brianna Psanos
 * Anissa B
 
+    * **Using:**
+    1. Open Weather API / for weather based generation
+    1. The Color API / for color scheme generation
+    1. Github / for team collaboration
