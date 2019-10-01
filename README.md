@@ -9,6 +9,9 @@ Lastly, the cherry on top, with each clothing template generated, you'll get an 
 ## Motivation / Purpose
 As a group, we wanted to make something that would "Take the stress out of getting dressed!" We believe we accomplished this issue by provided a quick and easy way to generate an outfit template. This app is also to showcase our skills with API's, CSS, and JavaScript. 
 
+## Future Plans
+We hope to expand the idea of Stitch Smith so that rather than generating a general template for an outfit, the user can upload photos of their own clothes and Stitch Smith will generate an outfit based on their actual items.
+
 ---
 
 ### Contributors
