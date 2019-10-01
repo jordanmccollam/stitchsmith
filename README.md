@@ -6,6 +6,9 @@ You can tweak the settings in the website so that you only get male clothes or f
 There is also a weather button, when activated will only give you appropriate clothes for the current weather of your area.
 Lastly, the cherry on top, with each clothing template generated, you'll get an optional color scheme to incooperate into your outfit if you choose!
 
+## Motivation / Purpose
+As a group, we wanted to make something that would "Take the stress out of getting dressed!" We believe we accomplished this issue by provided a quick and easy way to generate an outfit template. This app is also to showcase our skills with API's, CSS, and JavaScript. 
+
 ---
 
 ### Contributors
