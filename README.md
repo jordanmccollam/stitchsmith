@@ -17,6 +17,6 @@ As a group, we wanted to make something that would "Take the stress out of getti
 * Anissa B
 
     * **Using:**
-    1. Open Weather API / for weather based generation
-    1. The Color API / for color scheme generation
-    1. Github / for team collaboration
+        * Open Weather API / for weather based generation
+        * The Color API / for color scheme generation
+        * Github / for team collaboration
