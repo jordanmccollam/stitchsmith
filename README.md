@@ -14,12 +14,14 @@ We hope to expand the idea of Stitch Smith so that rather than generating a gene
 
 ---
 
+### Technoligies
+* Open Weather API / for weather based generation
+* The Color API / for color scheme generation
+* Github / for team collaboration
+* Bootstrap + CSS
+* JavaScript + jQuery
+
 ### Contributors
 * Jordan McCollam / <jordy.mccollam@gmail.com>
 * Brianna Psanos
 * Anissa B
-
-    * **Using:**
-        * Open Weather API / for weather based generation
-        * The Color API / for color scheme generation
-        * Github / for team collaboration
