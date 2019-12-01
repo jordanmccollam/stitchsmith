@@ -1,5 +1,9 @@
 # Sitch Smith
 
+*https://jordanmccollam.github.io/stitchsmith/*
+
+---
+
 ## Overview
 In short, this app will generate a clothing template so you don't have to think about what to wear!
 You can tweak the settings in the website so that you only get male clothes or female clothes. 
@@ -14,7 +18,7 @@ We hope to expand the idea of Stitch Smith so that rather than generating a gene
 
 ---
 
-### Technoligies
+### Technologies
 * Open Weather API / for weather based generation
 * The Color API / for color scheme generation
 * Github / for team collaboration
